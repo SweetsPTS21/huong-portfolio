@@ -12,6 +12,7 @@ import {
     Palette,
     Users,
 } from "lucide-react";
+import avatar from "./assets/avatar.jpg";
 
 const Portfolio = () => {
     const [currentPage, setCurrentPage] = useState("about");
@@ -140,7 +141,11 @@ const Portfolio = () => {
                         {/* Logo */}
                         <div className="flex items-center space-x-3 group cursor-pointer">
                             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg sm:text-xl group-hover:scale-110 transition-transform duration-300">
-                                H
+                                <img
+                                    src={avatar}
+                                    alt="Avatar"
+                                    className="rounded-full h-full w-full object-cover"
+                                />
                             </div>
                             <div className="hidden sm:block">
                                 <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -225,8 +230,12 @@ const Portfolio = () => {
                             {/* Hero Section */}
                             <div className="text-center mb-12 sm:mb-16">
                                 <div className="inline-block mb-6">
-                                    <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 flex items-center justify-center text-white font-bold text-4xl sm:text-5xl shadow-2xl animate-bounce-slow">
-                                        H
+                                    <div className="w-56 h-56 sm:w-32 sm:h-32 rounded-full bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 flex items-center justify-center text-white font-bold text-4xl sm:text-5xl shadow-2xl animate-bounce-slow">
+                                        <img
+                                            src={avatar}
+                                            alt="Avatar"
+                                            className="rounded-full h-full w-full object-cover"
+                                        />
                                     </div>
                                 </div>
                                 <h1 className="text-3xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
