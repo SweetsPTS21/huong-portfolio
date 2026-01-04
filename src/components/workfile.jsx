@@ -135,14 +135,6 @@ const Workfile = ({ selectedProject }) => {
                         Bài tập này bao gồm các minh chứng và tài liệu đính kèm
                         đầy đủ
                     </p>
-                    <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-6 max-w-2xl mx-auto mb-8">
-                        <p className="text-sm text-gray-700 leading-relaxed">
-                            📝 <span className="font-semibold">Ghi chú:</span>{" "}
-                            Minh chứng chi tiết cho bài tập này được lưu trữ
-                            trong file đính kèm. Mọi hình ảnh, tài liệu và kết
-                            quả thực hành đều có thể được kiểm tra và xác minh.
-                        </p>
-                    </div>
 
                     {/* File Upload and Actions */}
                     <div className="max-w-xl mx-auto">
